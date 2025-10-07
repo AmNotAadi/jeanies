@@ -9,6 +9,10 @@ node_modules/
 # Production
 /build
 
+# Public folder - exclude build artifacts but keep source files
+/public/build
+/public/static
+
 # Misc
 .DS_Store
 .env.local
@@ -93,7 +97,7 @@ dist
 
 # Gatsby files
 .cache/
-public
+# public  # Commented out - we need public folder for React
 
 # Storybook build outputs
 .out
