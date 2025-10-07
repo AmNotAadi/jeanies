@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Jeanie's Boutique</title>
+    <meta name="description" content="Visit Jeanie's Boutique in Bhopal. Contact us for custom tailoring, hand embroidery, and all your fashion needs.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Source+Sans+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>Jeanie's Boutique</h2>
+            </div>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">📍 Visit Us</h1>
+            <p class="page-subtitle">Come by to explore fabrics, discuss your next outfit, or simply get inspired</p>
+        </div>
+    </section>
+
+    <!-- Contact Info -->
+    <section class="contact-info-section">
+        <div class="container">
+            <div class="contact-info-content">
+                <div class="contact-details">
+                    <h2>Jeanie's Boutique</h2>
+                    <p class="contact-location">Bhopal, Madhya Pradesh</p>
+                    <p class="contact-description">
+                        We'd love to make something beautiful for you. 💖
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Address</h4>
+                                <p>Address details to be added</p>
+                                <small>Bhopal, Madhya Pradesh</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Phone</h4>
+                                <p>Contact number to be added</p>
+                                <small>Call for consultation</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <p>Email to be added</p>
+                                <small>Send us your queries</small>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Business Hours</h4>
+                                <p>Monday - Saturday: 10:00 AM - 7:00 PM</p>
+                                <small>Sunday: Closed</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-map">
+                    <div class="map-placeholder">
+                        <i class="fas fa-map"></i>
+                        <p>Google Map Integration</p>
+                        <small>Map will be embedded here</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📝 Get In Touch</h2>
+                <p class="section-subtitle">Have a question or want to book a consultation? Send us a message!</p>
+            </div>
+            
+            <div class="contact-form-container">
+                <form class="contact-form" id="contactForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number *</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email">
+                        </div>
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service" name="service">
+                                <option value="">Select a service</option>
+                                <option value="custom-tailoring">Custom Tailoring</option>
+                                <option value="hand-embroidery">Hand Embroidery</option>
+                                <option value="bridal-wear">Bridal Wear</option>
+                                <option value="festive-wear">Festive Wear</option>
+                                <option value="everyday-wear">Everyday Wear</option>
+                                <option value="consultation">General Consultation</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="occasion">Occasion (if applicable)</label>
+                        <input type="text" id="occasion" name="occasion" placeholder="e.g., Wedding, Diwali, Office wear">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="budget">Budget Range</label>
+                        <select id="budget" name="budget">
+                            <option value="">Select budget range</option>
+                            <option value="under-5000">Under ₹5,000</option>
+                            <option value="5000-10000">₹5,000 - ₹10,000</option>
+                            <option value="10000-25000">₹10,000 - ₹25,000</option>
+                            <option value="25000-50000">₹25,000 - ₹50,000</option>
+                            <option value="above-50000">Above ₹50,000</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" name="message" rows="5" placeholder="Tell us about your vision, preferences, or any specific requirements..." required></textarea>
+                    </div>
+                    
+                    <div class="form-group checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="newsletter" value="yes">
+                            <span class="checkmark"></span>
+                            I would like to receive updates about new designs and offers
+                        </label>
+                    </div>
+                    
+                    <div class="form-submit">
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="form-note">* Required fields</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media -->
+    <section class="social-media-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">📱 Follow Us</h2>
+                <p class="section-subtitle">Stay connected and see our latest creations</p>
+            </div>
+            
+            <div class="social-links">
+                <a href="#" class="social-link facebook">
+                    <i class="fab fa-facebook-f"></i>
+                    <span>Facebook</span>
+                </a>
+                <a href="#" class="social-link instagram">
+                    <i class="fab fa-instagram"></i>
+                    <span>Instagram</span>
+                </a>
+                <a href="#" class="social-link whatsapp">
+                    <i class="fab fa-whatsapp"></i>
+                    <span>WhatsApp</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">❓ Frequently Asked Questions</h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How long does it take to complete an outfit?</h4>
+                    <p>Regular outfits take 7-10 days, festive wear takes 10-15 days, and bridal wear takes 20-30 days. Hand embroidery adds 5-10 extra days.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Do you provide fabric or should I bring my own?</h4>
+                    <p>We have a curated collection of premium fabrics, but you're welcome to bring your own fabric for custom designs.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Do you offer alteration services?</h4>
+                    <p>Yes, we provide alteration services for outfits purchased from us, and we can also alter outfits from other places.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I see the progress of my outfit?</h4>
+                    <p>Absolutely! We encourage multiple fittings to ensure perfect fit and you can see the progress at each stage.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What payment methods do you accept?</h4>
+                    <p>We accept cash, card payments, and digital payments. We also offer flexible payment plans for bridal wear.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Do you deliver outside Bhopal?</h4>
+                    <p>We primarily serve Bhopal, but we can arrange delivery to nearby cities for an additional charge.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Jeanie's Boutique</h3>
+                    <p>Timeless Women's Fashion in Bhopal</p>
+                </div>
+                
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="about.html">About</a>
+                    <a href="services.html">Services</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+                
+                <div class="footer-copyright">
+                    <p>&copy; 2024 Jeanie's Boutique. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
