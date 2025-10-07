@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
+import React, { useState, useRef, useEffect, useCallback } from 'react';
 import { motion } from 'framer-motion';
 
 const BeforeAfterSlider = () => {
@@ -6,17 +6,17 @@ const BeforeAfterSlider = () => {
   const [isDragging, setIsDragging] = useState(false);
   const containerRef = useRef(null);
 
-  const handleMouseMove = (e) => {
+  const handleMouseMove = useCallback((e) => {
     if (!isDragging || !containerRef.current) return;
     
     const rect = containerRef.current.getBoundingClientRect();
     const x = e.clientX - rect.left;
     const percentage = (x / rect.width) * 100;
     setSliderPosition(Math.max(0, Math.min(100, percentage)));
-  };
+  }, [isDragging]);
 
   const handleMouseDown = () => setIsDragging(true);
-  const handleMouseUp = () => setIsDragging(false);
+  const handleMouseUp = useCallback(() => setIsDragging(false), []);
 
   useEffect(() => {
     if (isDragging) {
